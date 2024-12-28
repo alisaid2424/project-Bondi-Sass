@@ -1,0 +1,169 @@
+@use "../helpers/varibles" as *;
+@use "../helpers/mixins" as *;
+
+
+/* Start Landing */
+.landing{
+    background-color:$darkColor ;
+    min-height: calc(100vh - 72px);
+}
+/* End Landing */
+/* Start Features */
+.feature {
+    .holder-icon{
+        height: 200px;
+        svg{
+            left: 50%;
+            @include prifixer(transform , translateX(-50%), webKit Moz O );
+        }
+        .number{
+            font-size: 12rem;
+            color: $sectionColor;
+        }
+        .icon{
+            color: $greenColor;
+        }
+    }
+    .feat{
+        h4{
+            color: $yellowColor;
+        }
+    }
+}
+/* End Features */
+/* Start Our-work  */
+.our-work{
+    background-color:  $sectionColor;
+    .links{
+        & .active{
+            background-color: $redColor;
+            color: $yellowColor;
+        }
+        li{
+            padding: .5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            &:not(.active):hover{
+                color: $redColor;
+            }
+        }
+    }
+    .box{
+        @media #{$maxMobile} {
+            flex-basis: 80%;
+        }
+        @media #{$minTab } {
+            flex-basis: 45%;
+        }
+        @media #{$minSmall } {
+            flex-basis: 31%;
+        }
+        @media #{$minLarge} {
+            flex-basis: 23%;
+        }
+        overflow: hidden;
+        padding: 5px;
+        background-color: white;
+        position: relative;
+        &::before{
+            content: attr(data-work);
+            position: absolute;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            @include center-box;
+            background-color:rgb(51 209 204 / 68%);
+            font-weight: bold;
+            color: white;
+            font-size: 1.5rem;
+            @include prifixer(transform, translateX(calc(-100% - 6px)) , webKit Moz O );
+            @include prifixer(transition, .3s , webKit Moz O );
+        }
+        &:hover::before{
+            @include prifixer(transform, translateX(0) , webKit Moz O );
+        }
+    }
+}
+/* End Our-work  */
+/*  Start stuff  */
+.stuff {
+    .label{
+        max-width: 500px;
+    }
+    .info{
+        text-align: center;
+        @media #{$minMediem}{
+            text-align: left;
+            [dir="rtl"] &{
+                text-align: right;
+            }
+        }
+    }
+}
+/*  End stuff  */
+/* Start Team */
+.team{
+    background-color: $sectionColor;
+    h2{
+        color:$yellowColor;
+    }
+    .box{
+        background-color: white;
+        h4{
+            background-color: $greenColor;
+        }
+    }
+}
+/* End Team */
+/* Start project */
+.project{
+    background-color: $darkColor;
+}
+/* End project */
+/* Start Subscribe */
+.subscribe{
+    background-color: $yellowColor;
+    input[type="text"]{
+        border: none;
+        border-bottom: 1px solid white;
+        &:focus{
+            outline: none;
+        }
+        &:focus::placeholder{
+            opacity: 0;
+        }
+        &::placeholder{
+            color: white;
+        }
+    }
+    input[type="submit"]{
+        background-color: $darkColor;
+        color: $yellowColor;
+        @include prifixer(transition , .3s , webKit Moz O );
+        &:hover{
+            background-color: $redColor;
+        }
+    }
+}
+/* End Subscribe */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

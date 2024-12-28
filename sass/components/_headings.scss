@@ -1,0 +1,29 @@
+@use "../helpers/varibles" as *;
+@use "../helpers/mixins" as *;
+
+.main-title::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: $greenColor;
+    bottom: -20px;
+    left: 50%;
+    @include prifixer(transform , translateX(-50%) , webKit Moz O );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

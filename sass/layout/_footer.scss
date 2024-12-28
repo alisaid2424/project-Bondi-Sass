@@ -1,0 +1,68 @@
+@use "../helpers/varibles" as *;
+
+/* start footer */
+.footer{
+    background-color: $darkColor;
+    text-align: center;
+    @media #{$minSmall } {
+        text-align: left;
+        [dir="rtl"] &{
+            text-align: right;
+        }
+    }
+    .copyright {
+        > span{
+            color: $greenColor;
+        }
+        div{
+            span{
+                color: $yellowColor;
+            }
+        }
+    }
+    .contact{
+        svg{
+            height: 20px;
+            width: 20px;
+        }
+        .facebook{
+            background-color: #1877f2;
+        }
+        .twitter{
+            background-color: #1da1f2;
+        }
+        .linkedin{
+            background-color: #0077b5;
+        }
+        .youtube{
+            background-color: #ff0000;
+        }
+    }
+}
+/* End footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

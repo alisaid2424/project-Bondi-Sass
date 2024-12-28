@@ -1,0 +1,58 @@
+@use "../helpers/varibles" as *;
+
+
+/* Start Nav-bar */
+.navbar{
+    background-color:$darkColor ;
+    .navbar-nav{
+        .nav-link{
+            color: white;
+            &.active,&:hover{
+                color: $greenColor;
+            }
+        }
+    }
+    .navbar-toggler{
+        color: white;
+        border: 2px solid white;
+        font-size: 25px;
+        &:focus{
+            box-shadow: none;
+        }
+        &[aria-expanded ="true"]{
+            border-color: $greenColor;
+        }
+    }
+    .searsh {
+        border-left: 2px solid $greenColor;
+        svg{
+            color: $greenColor;
+        }
+    }
+}
+/* End Nav-bar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

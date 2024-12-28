@@ -1,0 +1,48 @@
+@use "../helpers/varibles" as *;
+
+
+.main-btn{
+    background-color:$redColor ;
+    color: $yellowColor ;
+    padding: .5rem 1rem;
+    &:hover{
+        background-color:$greenColor ;
+        color: $darkColor ;
+    }
+}
+
+
+
+.btn-backUp{
+    right: 1.2rem;
+    bottom: 1.8rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: $redColor;
+    color: white;
+    line-height: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+
+@use "../helpers/mixins" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    @include prifixer(box-sizing , border-box , webKit Moz O );
+}
+
+body{
+    background-color:#f6f6f6;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
